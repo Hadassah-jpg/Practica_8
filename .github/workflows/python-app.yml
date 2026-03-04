@@ -37,3 +37,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Check code with ruff
+      working-directory: src
+      run: ruff check .
